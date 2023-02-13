@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Checkout code') {
+      steps {
+        sh 'ls -la'
+      }
+    }
+
   }
 }

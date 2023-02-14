@@ -21,7 +21,7 @@ pipeline {
 
     stage('push to Nexus') {
       steps {
-        sh 'docker push http://143.42.61.152:8082/express:latest'
+        sh 'docker push 143.42.61.152:8082/express:latest'
       }
     }
 

@@ -25,5 +25,12 @@ pipeline {
       }
     }
 
+    stage('push to nexus') {
+      steps {
+        sh '''docker push 143.42.61.152:8082/express:latest
+'''
+      }
+    }
+
   }
 }

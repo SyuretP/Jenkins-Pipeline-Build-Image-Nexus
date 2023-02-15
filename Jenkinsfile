@@ -19,9 +19,9 @@ pipeline {
       }
     }
 
-    stage('push to Nexus') {
+    stage('login to nexus') {
       steps {
-        sh 'docker push 143.42.61.152:8082/express:latest'
+        sh 'docker login -u admin -p Letmein890!!!!! 143.42.61.152:8082'
       }
     }
 

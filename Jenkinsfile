@@ -37,7 +37,7 @@ pipeline {
         sh '''#!/bin/bash
 
 
-ssh root@143.42.61.152'''
+ssh -tt root@143.42.61.152'''
       }
     }
 

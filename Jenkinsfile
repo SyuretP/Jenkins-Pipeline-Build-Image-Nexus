@@ -34,7 +34,10 @@ pipeline {
 
     stage('ssh to nexus server') {
       steps {
-        sh 'ssh jenkins@143.42.61.152'
+        sh '''#!/bin/bash
+
+
+ssh root@143.42.61.152'''
       }
     }
 

@@ -34,7 +34,7 @@ pipeline {
 
     stage('ssh to nexus server') {
       steps {
-        sh 'ssh syuretp@143.42.61.152'
+        sh 'ssh jenkins@143.42.61.152'
       }
     }
 

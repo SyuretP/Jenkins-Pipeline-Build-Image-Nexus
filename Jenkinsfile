@@ -37,7 +37,7 @@ pipeline {
         sh '''#!/bin/bash
 
 
-ssh -tt root@143.42.61.152 "docker pull 143.42.53.442:8082/express:latest"'''
+ssh -tt root@143.42.61.152 "docker pull 143.42.61.152:8082/express:latest"'''
       }
     }
 

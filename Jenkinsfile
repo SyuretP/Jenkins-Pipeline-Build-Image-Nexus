@@ -32,5 +32,11 @@ pipeline {
       }
     }
 
+    stage('ssh to Nexus server') {
+      steps {
+        sh 'ssh root@143.42.61.152'
+      }
+    }
+
   }
 }

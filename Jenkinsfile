@@ -32,9 +32,8 @@ pipeline {
       }
     }
 
-    stage('ssh to Nexus server') {
+    stage('ssh to nexus server') {
       steps {
-        sshPublisher()
         sh 'ssh syuretp@143.42.61.152'
       }
     }

@@ -32,7 +32,7 @@ pipeline {
       }
     }
 
-    stage('ssh to nexus server') {
+    stage('ssh to nexus server/pull docker image') {
       steps {
         sh '''#!/bin/bash
 

@@ -41,5 +41,17 @@ ssh -tt root@143.42.61.152 "docker pull 143.42.61.152:8082/express:latest"'''
       }
     }
 
+    stage('Deploy') {
+      steps {
+        sh '''#!/bin/bash
+ssh -tt root@143.42.61.152 
+"docker run -t -d -p 8085:8083 143.42.61.152:8082/express"
+"docker ps -a -q --filter ancestor=143.42.61.152:8082/express"
+"docker pull 143.42.61.152:8082/express"
+"docker run -t -d -p 8085:8083 143.42.61.152:8082/express:latest""
+'''
+      }
+    }
+
   }
 }

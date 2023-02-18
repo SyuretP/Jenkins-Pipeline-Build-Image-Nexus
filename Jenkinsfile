@@ -38,8 +38,8 @@ pipeline {
 
 
 ssh -tt root@143.42.61.152 
-"docker pull 143.42.61.152:8082/express:latest;
-docker run -t -d -p 8085:8083 143.42.61.152:8082/express"
+"docker pull 143.42.61.152:8082/express:latest"
+
 '''
       }
     }

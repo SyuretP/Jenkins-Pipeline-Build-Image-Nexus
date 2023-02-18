@@ -20,8 +20,12 @@ pipeline {
     }
 
     stage('login to nexus') {
+      environment {
+        ENVNEXUS_USER = 'admin'
+        ENVNEXUS_PASSWORD = 'Letmein890!!!!!'
+      }
       steps {
-        sh 'docker login -u admin -p Letmein890!!!!! 143.42.61.152:8082'
+        sh 'docker login -u $NEXUS_USER -p $NEXUS_PASSWORD 143.42.61.152:8082'
       }
     }
 

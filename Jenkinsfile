@@ -47,9 +47,9 @@ ssh -tt root@143.42.61.152 "docker pull 143.42.61.152:8082/express:latest && doc
       }
     }
 
-    stage('Send email with status') {
+    stage('Send status email') {
       steps {
-        mail(subject: 'Status', body: 'Check build status', from: 'Jenkins', to: 'syuretp89@gmail.com')
+        emailext(subject: 'Status', body: 'Check status', from: 'Jenkins', to: 'syuretp89@gmail.com')
       }
     }
 

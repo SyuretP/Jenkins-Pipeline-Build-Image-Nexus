@@ -1,4 +1,4 @@
-Jenkins Pipeline
+**Jenkins Pipeline**
 - Building an image from Dockerfile
 - pushes image to private Nexus repo
 - another remote server is pulling the lastest version of the image and runs it as a docker container
